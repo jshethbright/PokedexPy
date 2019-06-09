@@ -386,17 +386,17 @@ def Print_Pokemon_Info(chosen_pokemon_info, species_info):
     
     print(CYAN + 'Evolution Chain:', ', '.join(pokemon_evolution_chain), '\n')
     
-    print(CYAN + 'Base Stats:\n\n    ' , ', '.join("{}: {}".format(key, value) for key, value in pokemon_base_stats.items()), '\n')
+    print(RED + 'Base Stats:\n\n    ' , ', '.join("{}: {}".format(key, value) for key, value in pokemon_base_stats.items()), '\n')
     
-    print(CYAN + 'Types:', ', '.join(pokemon_types), '\n')
+    print(YELLOW + 'Types:', ', '.join(pokemon_types), '\n')
     
-    print(CYAN + 'Abilities:', ', '.join(pokemon_abilities), '\n')
+    print(YELLOW + 'Abilities:', ', '.join(pokemon_abilities), '\n')
     
-    print(CYAN + 'Possible Moves:', ', '.join(pokemon_moves), '\n')
+    print(YELLOW + 'Possible Moves:', ', '.join(pokemon_moves), '\n')
     
-    print(CYAN + 'Weight:', pokemon_weight, '\n')
+    print(GREEN + 'Weight:', pokemon_weight, '\n')
     
-    print(CYAN + 'Flavor Text:', pokemon_flavortext, '\n')
+    print(RED + 'Flavor Text:', YELLOW + pokemon_flavortext, '\n')
 
 def Print_Type_Info(typeInfo):
     """
@@ -431,8 +431,8 @@ def Print_Move_Info(moveInfo):
     print(CYAN + 'PP:', moveInfo.pp)
     print(YELLOW + 'Priority:', moveInfo.priority, '\n')
     print(CYAN + 'Damage Class:', moveInfo.damage_class, '\n')
-    print(RED + 'Effect:', moveInfo.effect, '\n')
-    print(CYAN + 'Flavor Text:', moveInfo.flavortext, '\n')
+    print(RED + 'Effect:', YELLOW + moveInfo.effect, '\n')
+    print(CYAN + 'Flavor Text:', RED + moveInfo.flavortext, '\n')
 
 def Print_Ability_Info(abilityInfo):
     """
@@ -443,7 +443,7 @@ def Print_Ability_Info(abilityInfo):
 
     """
     print('\nYour chosen ability is: ' + CYAN + abilityInfo.name + '\n')
-    print(RED + 'Effect:', abilityInfo.effect, '\n')
+    print(RED + 'Effect:', YELLOW + abilityInfo.effect, '\n')
 
         
 def Pokedex(second_time = False):
