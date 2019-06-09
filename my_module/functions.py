@@ -407,14 +407,14 @@ def Print_Type_Info(typeInfo):
     """
     print('Your chosen type is: ' + CYAN + typeInfo.name + '\n')
     
-    print(RED + 'Double Damage From:', ', '.join(typeInfo.double_damage_from))
-    print(RED + 'Double Damage To:', ', '.join(typeInfo.double_damage_to), '\n')
+    print(RED + 'Double Damage From:', YELLOW + ', '.join(typeInfo.double_damage_from))
+    print(RED + 'Double Damage To:', YELLOW + ', '.join(typeInfo.double_damage_to), '\n')
     
-    print(CYAN + 'Half Damage From:', ', '.join(typeInfo.half_damage_from))
-    print(CYAN + 'Half Damage To:', ', '.join(typeInfo.half_damage_to), '\n')
+    print(CYAN + 'Half Damage From:', YELLOW + ', '.join(typeInfo.half_damage_from))
+    print(CYAN + 'Half Damage To:', YELLOW + ', '.join(typeInfo.half_damage_to), '\n')
     
-    print(GREEN + 'No Damage From:', ', '.join(typeInfo.no_damage_from))
-    print(GREEN + 'No Damage To:', ', '.join(typeInfo.no_damage_to), '\n')
+    print(GREEN + 'No Damage From:', YELLOW + ', '.join(typeInfo.no_damage_from))
+    print(GREEN + 'No Damage To:', YELLOW + ', '.join(typeInfo.no_damage_to), '\n')
 
 def Print_Move_Info(moveInfo):
     """
@@ -432,7 +432,7 @@ def Print_Move_Info(moveInfo):
     print(YELLOW + 'Priority:', moveInfo.priority, '\n')
     print(CYAN + 'Damage Class:', moveInfo.damage_class, '\n')
     print(RED + 'Effect:', YELLOW + moveInfo.effect, '\n')
-    print(CYAN + 'Flavor Text:', RED + moveInfo.flavortext, '\n')
+    print(RED + 'Flavor Text:', YELLOW + moveInfo.flavortext, '\n')
 
 def Print_Ability_Info(abilityInfo):
     """
@@ -589,7 +589,4 @@ You can also enter 'Exit' to end the program\n
         next
     else:
         print('\nInvalid input, please try again')
-        Know_More()
-        
-    
-    
+        Know_More()  
