@@ -1,0 +1,6 @@
+
+\.ipynb_checkpoints/
+
+scripts/__pycache__/
+
+my_module/__pycache__/
