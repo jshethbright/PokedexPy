@@ -18,7 +18,7 @@ This program can display various attributes of a Pokémon, here are some example
 ## Process:
 The program connects to an API for the Pokémon game series using the 'requests' module and returns JSON information from various endpoints. 
 
-I first created the functions for getting all the overarching information I needed, and then created other functions for getting specific informationf from the overarching information. An example of this would be 'get_species_info()' which gets the species info of a given Pokémon and 'get_evolution_chain()' which gets the evolution chain of from the given species info. This reduces the number of API calls and prevents rate limiting.
+I first created the functions for getting all the overarching information from the PokeAPI that I needed, and then created other functions for getting specific information from the overarching information. An example of this would be 'get_species_info()' which gets the species info of a given Pokémon and 'get_evolution_chain()' which gets the evolution chain of from the given species info. This reduces the number of API calls and prevents rate limiting.
 
 Additionally, there is also built in protection for nonstandard text inputs. The program gets the raw text input from a user then converts it to lowercase and also replaces spaces with dashes or underscores when needed. This allows a user to not worry about proper uppercases or lowercases and gracefully accepts nonstandard inputs such as 'pIKacHU' without erroring.
 
